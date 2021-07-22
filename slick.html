@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick</title>
+
+    <!--font asw-- autoplay muted loop-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/slick.css">
+
+</head>
+<body>
+    
+  <div class="banner1">
+        <div class="text">
+        <h1>Its not just coffee<br>Its<span>Starbuks</span></h1>
+        <p>
+            sit amet consectetur adipisicing elit. Praesentium, facilis quaerat? Adipisci, velit asperiores            
+        </p>
+        <a href="#">learn more</a>
+        </div>
+
+   
+        <video src="/img/production ID_4990245.mp4" type="video/muted" autoplay muted loop class="clip">
+        
+    </div>
+  
+
+  <script>
+      const clip = document.querySelectorAll('.clip');
+      for (let i = 0; i<clip.length; i++){
+          clip[i].addEventListener('mouseenter',
+          function(e){
+              clip[e].play()
+          })
+
+          clip[i].addEventListener('mouseout',
+          function(e){
+              clip[e].pause()
+          })
+      }
+  </script>
+  
+
+   
+</body>
+</html>
